@@ -1,0 +1,32 @@
+{
+  "name": "aplus-academy",
+  "version": "1.0.0",
+  "description": "aplus-academy",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"nodemon server.js\" \"npm run myclient\" ",
+    "myclient": "npm start --prefix myclient",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tamiru-Alemnew/Evangadi-Forum.git"
+  },
+  "author": "Tamiru-Alemnew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tamiru-Alemnew/Evangadi-Forum/issues"
+  },
+  "homepage": "https://github.com/Tamiru-Alemnew/Evangadi-Forum#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.2.0",
+    "mongoose": "^7.6.3"
+  }
+}
